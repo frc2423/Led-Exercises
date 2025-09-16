@@ -9,12 +9,7 @@ Welcome to the FRC LED Programming Exercises! This project is designed to help n
 
 1. Open this project in VS Code with the WPILib extension installed
 2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the command palette
-3. Type "WPILib: Simulate Robot Code" and select it
-4. Choose "Sim GUI" when prompted and press OK
-5. The simulation GUI will open, showing your robot's LED strip
-
-### Testing Your LED Challenges
-
+3. Type "WPILib: Simulate Robot Code" and select itsj
 1. You'll see buttons for each LED challenge (e.g., "All Green", "First 3 Green", etc.)
 2. Click any button to test your LED pattern
 3. The "Addressable LEDs" section (under Hardware menu) will show your LED strip visually
@@ -69,7 +64,7 @@ Complete these challenges in order. Each challenge builds on concepts from previ
 **Goal**: Make all LEDs transition through rainbow colors
 **Concepts**: HSV color space, time-based animation
 **Hint**: Use `buffer.setHSV(i, hue, saturation, value)` and change hue over time
-
+ 
 ### Challenge 6: Bouncy
 **File**: `src/main/java/frc/robot/subsystems/LED/Bouncy.java`
 **Goal**: Make 10 LEDs bounce back and forth from start to end

@@ -15,6 +15,9 @@ public class AllGreen implements Led {
     }
 
     public void run(AddressableLEDBuffer buffer, int length) {
+        for (int i = 0; i < length; i++) {
+            buffer.setRGB(i, 0, 255, 0);
+        }
 
     }
 

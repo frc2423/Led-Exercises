@@ -15,8 +15,15 @@ public class EvenOdd implements Led {
 
     }
 
-    public void run(AddressableLEDBuffer buffer, int length) {
-
+    public void run(AddressableLEDBuffer buffer, int length) { // Set to surpentine to work
+        for (int i = 0; i < length; i++) {
+            if (i % 2 == 0) {
+                buffer.setRGB(i, 0, 255, 0);
+            }
+            else {
+                buffer.setRGB(i, 0, 0, 255);
+            }
+        }
     }
 
     public void end(AddressableLEDBuffer buffer, int length) {

@@ -12,7 +12,13 @@ public class Bouncy implements Led {
     }
 
     public void run(AddressableLEDBuffer buffer, int length) {
+        int z = 0;
+        for (int i = 0; i < length; i++) {
+            z++;
 
+            buffer.setRGB(i, 0, 255, 0);
+            buffer.setRGB(i, 0, 0, 0);
+        }
     }
 
     public void end(AddressableLEDBuffer buffer, int length) {
