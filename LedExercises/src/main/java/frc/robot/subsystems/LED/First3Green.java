@@ -12,13 +12,17 @@ import edu.wpi.first.wpilibj.AddressableLEDBuffer;
 public class First3Green implements Led {
     
     public void start(AddressableLEDBuffer buffer, int length) {
-
+        
     }
 
     public void run(AddressableLEDBuffer buffer, int length) {
-
+        for (var i=0; i < 3; i++){
+            buffer.setRGB(i, 0, 255, 0);
+        }
+        for (var i=3; i < length; i++){
+            buffer.setRGB(i, 0, 0, 0);
+        }
     }
-
     public void end(AddressableLEDBuffer buffer, int length) {
 
     }

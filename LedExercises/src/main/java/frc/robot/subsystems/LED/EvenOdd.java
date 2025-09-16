@@ -16,7 +16,20 @@ public class EvenOdd implements Led {
     }
 
     public void run(AddressableLEDBuffer buffer, int length) {
+        for (var i=0; i<length; i++)  {
+            // is odd
+            Boolean isOdd  = i%2==1;
+            if (isOdd) {
+                buffer.setRGB(i, 0, 255, 0);
+            }
+            else {
+                buffer.setRGB(i, 0, 0, 255);
+            }
+            //if odd be green
+            // if even be blue
 
+        }
+        
     }
 
     public void end(AddressableLEDBuffer buffer, int length) {
