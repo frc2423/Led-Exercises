@@ -19,6 +19,7 @@ public class Rainbow implements Led {
     public void run(AddressableLEDBuffer buffer, int length) {
     for (int i = 0; i < length; i++) { // for each led
         buffer.setHSV(i, hue, 255, 255);
+        System.out.println("Hello!");
     }
     hue++;
 
